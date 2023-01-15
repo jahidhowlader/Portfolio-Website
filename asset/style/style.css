@@ -1,0 +1,78 @@
+/* -----------------
+Import Link or File 
+------------------*/
+
+/* Google Font */
+
+
+/* ------------
+Utilities Style
+--------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #15c196;
+    --primary-font: 'Work Sans', sans-serif;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+/* Header Section Style */
+.navication{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+
+.navication ul{
+    display: flex;
+    gap: 50px;
+}
+
+.navication ul li{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navication ul li:hover{
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+.intro{
+    padding: 100px 250px 250px;
+}
+
+.intro h1{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.intro span {
+    color: var(--primary-color);
+}
+
+.intro p {
+    font-size: 20px;
+    padding: 25px 0;
+}
+
+.intro button{
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    padding: 20px 70px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+}
