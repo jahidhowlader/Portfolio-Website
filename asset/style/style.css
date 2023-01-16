@@ -324,9 +324,7 @@ Contact Section style
         flex-direction: column;
         gap: 150px;
         align-items: center;
-        /* justify-content: center;
-        align-items: flex-end;
-        padding: 200px 0 300px; */
+
     }
 }
 
