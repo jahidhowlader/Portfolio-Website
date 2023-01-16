@@ -3,7 +3,7 @@ Import Link or File
 ------------------*/
 
 /* Google Font */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 /* ------------
@@ -21,6 +21,7 @@ Utilities Style
 :root {
     --primary-color: #15c196;
     --primary-font: 'Poppins', sans-serif;
+    --primary-font-color: white;
 
     --secondary-font-color: lightslategray
 }
@@ -28,12 +29,12 @@ Utilities Style
 body {
     font-family: var(--primary-font);
     background: #14141B;
-    color: white;
+    color: var(--primary-font-color);
 }
 
 .img-fluid {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .primary-color {
@@ -42,12 +43,7 @@ body {
 
 /* Header Section Style */
 header {
-    /* background-image: url('../image/colorful-abstract-nebula-space-background.jpg');
-    background-repeat: no-repeat;
-    background-position: cover;
-    width: 100%;
-    height: auto; */
-    color: white;
+    color: var(--primary-font-color);
 }
 
 .navication-section>.container {
@@ -100,20 +96,20 @@ header {
     font-size: 20px;
     font-weight: 700;
     border-radius: 3px;
-    color: white;
+    color: var(--primary-font-color);
 }
 
 .intro-section>.container button:hover {
     background: var(--primary-color);
 }
 
-.down-arrow{
+.down-arrow {
     text-align: center;
     font-size: 40px;
     padding-bottom: 100px;
 }
 
-.down-arrow i:last-child{
+.down-arrow i:last-child {
     font-size: 60px;
 }
 
@@ -124,9 +120,7 @@ Skill and tools
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    /* background: ; */
-    /* color: white; */
+    gap: 150px;
 }
 
 .skill-section>.container h4 {
@@ -142,29 +136,215 @@ Skill and tools
 
 .border-bottom {
     border-bottom: 1px solid var(--primary-color);
-    /* line-height: 280px; */
 }
 
 
+/* -----------------------------------------
+       My Project showcase Section Style
+-----------------------------------------*/
+.project-section .container{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    padding: 200px 0;
+}
 
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D25;
+ 
+}
 
+.project-content h5{
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
 
+.project-content button{
+    font-size: 20px;
+    background: transparent;
+    color: var(--primary-font-color);
+    border: 1px solid var(--primary-color);
+    font-weight: 100;
+    padding: 20px 100px;
+}
+
+.project-content button:hover{
+    background-color: var(--primary-color);
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
 
 /* --------------------
 Contact Section style 
 ---------------------*/
 .contact-section>.container {
     display: flex;
-    gap: 200px;
+    gap: 150px;
     justify-content: center;
-    align-items: center;
-    padding: 200px 0;
+    align-items: flex-end;
+    padding: 200px 0 300px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 110px;
+}
+
+.contact-content p {
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--secondary-font-color);
+}
+
+
+.contact-content p:first-child {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+    color: var(--primary-font-color);
+}
+
+
+.contact-section>.container .circle {
+    text-align: right;
+    width: 350px;
+    height: 350px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 60px 0 0;
+    position: relative;
+}
+
+.contact-section>.container .half-circle {
+    position: absolute;
+    top: 45px;
+    left: 43px;
+    height: 130px;
+    width: 260px;
+    border: 1px solid var(--primary-color);
+    border-radius: 150px 150px 0 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.link i {
+    font-size: 42px;
+    color:var(--primary-font-color);
+}
+
+.input {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form input {
+    background: #2D2D33;
+    color: var(--primary-font-color);
+    border: 2px solid var(--secondary-font-color);
+    height: 50px;
+}
+
+.contact-form textarea {
+    color: var(--primary-font-color);
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-font-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+
+
+.contact-form p {
+    padding: 40px 0 10px;
+    font-weight: 500;
+}
+
+.contact-form textarea {
+    background: #2D2D33;
+    border: 2px solid var(--secondary-font-color);
+}
+
+
+
+/* ----------------------------------------------------------------
+                             Media Query
+---------------------------------------------------------------*/
+
+/* Responsive Mobile */
+@media only screen and (max-width: 576px) {
+    .navication-section {
+        display: none;
+    }
+
+    /*  */
+    .intro-section {
+        display: none;
+    }
+
+    /*  */
+    .down-arrow {
+        display: none;
+    }
+
+    /*  */
+    .skill-section {
+        display: none;
+    }
+
+    /*---------------------------- 
+            Contact Section 
+    ----------------------------*/
+    .contact-section>.container {
+        flex-direction: column;
+        gap: 150px;
+        align-items: center;
+        /* justify-content: center;
+        align-items: flex-end;
+        padding: 200px 0 300px; */
+    }
+}
+
+/* 
+.contact-section>.container {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 200px 0 300px;
 }
 
 .contact-content{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    top: 110px;
 }
 
 .contact-content p {
@@ -195,32 +375,11 @@ Contact Section style
 .contact-section>.container .half-circle{
     position: absolute;
     top: 45px;
-    left: 34px;
-        height: 150px;
-        width: 280px;
+    left: 43px;
+        height: 130px;
+        width: 260px;
         border: 1px solid var(--primary-color);
         border-radius: 150px 150px 0 0;
-}
-
-.input{
-    display: flex;
-    gap: 50px;
-}
-
-.contact-form input {
-    background: #2D2D33;
-    border: 2px solid var(--secondary-font-color);
-    height: 50px;
-}
-
-.contact-form input[type="submit"] {
-    width: 100%;
-    background: transparent;
-    border: 1px solid var(--primary-color);
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 40px;
 }
 
 .links{
@@ -235,6 +394,38 @@ Contact Section style
     color: white;
 }
 
+.input{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form input {
+    background: #2D2D33;
+    color: white;
+    border: 2px solid var(--secondary-font-color);
+    height: 50px;
+}
+
+.contact-form textarea{
+    color: white;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+
+
 .contact-form p {
     padding: 40px 0 10px;
     font-weight: 500;
@@ -244,3 +435,4 @@ Contact Section style
     background: #2D2D33;
     border: 2px solid var(--secondary-font-color);
 }
+ */
