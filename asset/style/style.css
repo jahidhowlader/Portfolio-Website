@@ -3,6 +3,7 @@ Import Link or File
 ------------------*/
 
 /* Google Font */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 /* ------------
@@ -19,60 +20,227 @@ Utilities Style
 
 :root {
     --primary-color: #15c196;
-    --primary-font: 'Work Sans', sans-serif;
+    --primary-font: 'Poppins', sans-serif;
+
+    --secondary-font-color: lightslategray
 }
 
-body{
+body {
     font-family: var(--primary-font);
+    background: #14141B;
+    color: white;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.primary-color {
+    color: var(--primary-color);
 }
 
 /* Header Section Style */
-.navication{
+header {
+    /* background-image: url('../image/colorful-abstract-nebula-space-background.jpg');
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 100%;
+    height: auto; */
+    color: white;
+}
+
+.navication-section>.container {
     display: flex;
     justify-content: space-between;
     padding: 20px 150px;
 }
 
-.navication ul{
+.navication-section>.container ul {
     display: flex;
     gap: 50px;
 }
 
-.navication ul li{
+.navication-section>.container ul li {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.navication ul li:hover{
+.navication-section>.container ul li:hover {
     border-bottom: 2px solid var(--primary-color);
 }
 
-.primary-color{
-    color: var(--primary-color);
-}
-.intro{
-    padding: 100px 250px 250px;
+.intro-section>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    /* padding: 100px 250px 250px; */
 }
 
-.intro h1{
+.intro-section>.container h1 {
     font-size: 40px;
     line-height: 50px;
 }
 
-.intro span {
+.intro-section>.container span {
     color: var(--primary-color);
 }
 
-.intro p {
+.intro-section>.container p {
     font-size: 20px;
     padding: 25px 0;
+    color: var(--secondary-font-color);
 }
 
-.intro button{
+.intro-section>.container button {
     border: 1px solid var(--primary-color);
     background-color: transparent;
     padding: 20px 70px;
     font-size: 20px;
     font-weight: 700;
     border-radius: 3px;
+    color: white;
+}
+
+.intro-section>.container button:hover {
+    background: var(--primary-color);
+}
+
+.down-arrow{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+
+.down-arrow i:last-child{
+    font-size: 60px;
+}
+
+/* -------------
+Skill and tools
+------------- */
+.skill-section>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* background: ; */
+    /* color: white; */
+}
+
+.skill-section>.container h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.skill-section>.container p {
+    font-size: 18px;
+    color: var(--secondary-font-color);
+    padding-top: 30px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--primary-color);
+    /* line-height: 280px; */
+}
+
+
+
+
+
+
+/* --------------------
+Contact Section style 
+---------------------*/
+.contact-section>.container {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-content p {
+    font-size: 30px;
+    font-weight: 200;
+    color: var(--secondary-font-color);  
+}
+
+
+.contact-content p:first-child {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+    color: white;
+}
+
+
+.contact-section>.container .circle{
+    text-align: right;
+    width: 350px;
+    height: 350px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 60px 0 0;
+    position: relative;
+}
+
+.contact-section>.container .half-circle{
+    position: absolute;
+    top: 45px;
+    left: 34px;
+        height: 150px;
+        width: 280px;
+        border: 1px solid var(--primary-color);
+        border-radius: 150px 150px 0 0;
+}
+
+.input{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form input {
+    background: #2D2D33;
+    border: 2px solid var(--secondary-font-color);
+    height: 50px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.link i {
+    font-size: 42px;
+    color: white;
+}
+
+.contact-form p {
+    padding: 40px 0 10px;
+    font-weight: 500;
+}
+
+.contact-form textarea {
+    background: #2D2D33;
+    border: 2px solid var(--secondary-font-color);
 }
