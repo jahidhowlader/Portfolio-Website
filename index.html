@@ -24,7 +24,7 @@
     <!-- Header Section -->
     <header class="container mx-auto">
         <!-- navication -->
-        <section class="flex justify-between hidden">
+        <section class="flex justify-between ">
             <div>
                 <h1><span class="primary-color">Vicky</span>Zahid</h1>
             </div>
@@ -39,7 +39,7 @@
                 </nav>
 
 
-                <nav>
+                <nav class="hidden">
                     <div class="container flex flex-wrap items-center justify-between mx-auto">
                             <span
                                 class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span class="primary-color">Vicky</span>Zahid</span>
@@ -87,38 +87,37 @@
         </section>
 
         <!-- Intro Section -->
-        <section class="flex flex-col md:flex-row items-center justify-between">
-                <div class="space-y-5 p-5">
+        <section class="flex flex-col md:flex-row items-center justify-around p-5">
+                <div class="space-y-5">
                     <h1 class="text-3xl md:text-5xl font-medium">Hello, <br> I am <span class="primary-color">Jahid</span>, <br> Front End Developer </h1>
-                    <p class="text-slate-400">Currentlty Located in Bangladesh, I love building <span class="primary-color">Interactive</span>, digital experiences
+                    <p class="text-slate-400 tracking-wider">Currentlty Located in Bangladesh, I love building <span class="primary-color">Interactive</span>, digital experiences
                         on the
                         web.</p>
                     <button class="border rounded py-5 px-20 font-medium">Let's get in touch!</button>
                 </div>
                 <div>
-                    <img src="asset/image/4421964-removebg-preview.png" alt="">
+                    <!-- <img src="asset/image/4421964-removebg-preview.png" alt=""> -->
                 </div>
         </section>
     </header>
 
-    <main class="">
+    <main class="container mx-auto p-5">
         <!-- Down arrow -->
-        <div class="down-arrow">
+        <div class="text-center">
             <i class="fa-solid fa-chevron-down"></i> <br>
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down fa-xl"></i> <br>
+            <i class="fa-solid fa-chevron-down fa-2xl"></i>
         </div>
         <!-- Skill Section -->
-        <section class="skill-section">
-            <div class="container">
-                <div class="skill-thumbnail">
-                    <img src="asset/image/19362653-removebg-preview.png" alt="">
+        <section class="flex flex-col md:flex-row items-center justify-around py-20 gap-0 md:gap-x-0 space-y-10">       
+                <div class="space-y-8">
+                    <h4 class="text-2xl font-medium"><Span class="primary-color">Skills</Span> and tools</h4>
+                    <p class="text-slate-400 tracking-wider">For a more <span class="primary-color">detailed</span> overview, please feel free <br>  to check
+                        the tools that were based on <br> <span class="border-bottom ">a per-project basis.</span></p>
                 </div>
-                <div class="skill-content">
-                    <h4><Span class="primary-color">Skills</Span> and tools</h4>
-                    <p>For a more <span class="primary-color">detailed</span> overview, please feel <br> free to check
-                        the tools that were based on <br> <span class="border-bottom">a per project basis.</span></p>
+                <div class="">
+                    <img src="asset/image/skill.png" alt="">
                 </div>
-            </div>
         </section>
 
         <!-- My Project showcase -->

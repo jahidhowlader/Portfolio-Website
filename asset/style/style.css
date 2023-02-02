@@ -50,56 +50,11 @@ button:hover{
 
 }
 
+.border-bottom {
+    border-bottom: 1px solid var(--primary-color);
+}
+
 /* Header Section Style */
-
-
-
-
-
-
-
-.intro-section>.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.intro-section>.container h1 {
-    font-size: 40px;
-    line-height: 50px;
-}
-
-.intro-section>.container span {
-    color: var(--primary-color);
-}
-
-.intro-section>.container p {
-    font-size: 20px;
-    padding: 25px 0;
-    color: var(--secondary-font-color);
-}
-
-.intro-section>.container button {
-    border: 1px solid var(--primary-color);
-    background-color: transparent;
-    padding: 20px 70px;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 3px;
-    color: var(--primary-font-color);
-}
-
-.intro-section>.container button:hover {
-    background: var(--primary-color);
-}
-
-.down-arrow {
-    text-align: center;
-    font-size: 40px;
-    padding-bottom: 100px;
-}
-
 .down-arrow i:last-child {
     font-size: 60px;
 }
@@ -107,7 +62,7 @@ button:hover{
 /* -------------
 Skill and tools
 ------------- */
-.skill-section>.container {
+/* .skill-section>.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +82,7 @@ Skill and tools
 
 .border-bottom {
     border-bottom: 1px solid var(--primary-color);
-}
+} */
 
 
 /* -----------------------------------------
