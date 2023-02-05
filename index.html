@@ -12,6 +12,18 @@
 
     <!-- Tailwind CSS link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primaryColor: '#15c196',
+              }
+            }
+          }
+        }
+      </script>
 
     <!-- DaisyUI CSS -->
 
@@ -41,8 +53,8 @@
 
                 <nav class="hidden">
                     <div class="container flex flex-wrap items-center justify-between mx-auto">
-                            <span
-                                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span class="primary-color">Vicky</span>Zahid</span>
+                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span
+                                class="primary-color">Vicky</span>Zahid</span>
                         <button data-collapse-toggle="navbar-default" type="button"
                             class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-default" aria-expanded="false">
@@ -88,16 +100,18 @@
 
         <!-- Intro Section -->
         <section class="flex flex-col md:flex-row items-center justify-around p-5">
-                <div class="space-y-5">
-                    <h1 class="text-3xl md:text-5xl font-medium">Hello, <br> I am <span class="primary-color">Jahid</span>, <br> Front End Developer </h1>
-                    <p class="text-slate-400 tracking-wider">Currentlty Located in Bangladesh, I love building <span class="primary-color">Interactive</span>, digital experiences
-                        on the
-                        web.</p>
-                    <button class="border rounded py-5 px-20 font-medium">Let's get in touch!</button>
-                </div>
-                <div>
-                    <!-- <img src="asset/image/4421964-removebg-preview.png" alt=""> -->
-                </div>
+            <div class="space-y-5">
+                <h1 class="text-3xl md:text-5xl font-medium">Hello, <br> I am <span class="primary-color">Jahid</span>,
+                    <br> Front End Developer </h1>
+                <p class="text-slate-400 tracking-wider">Currentlty Located in Bangladesh, I love building <span
+                        class="primary-color">Interactive</span>, digital experiences
+                    on the
+                    web.</p>
+                <button class="border rounded py-5 px-20 font-medium">Let's get in touch!</button>
+            </div>
+            <div>
+                <!-- <img src="asset/image/4421964-removebg-preview.png" alt=""> -->
+            </div>
         </section>
     </header>
 
@@ -110,88 +124,90 @@
         </div>
         <!-- Skill Section -->
         <section class="flex flex-col md:flex-row items-center justify-around py-20 gap-0 md:gap-x-0 space-y-10">
-                <div class="space-y-5 md:space-y-8">
-                    <h4 class="text-2xl font-medium"><Span class="primary-color">Skills</Span> and tools</h4>
-                    <p class="text-slate-400 tracking-wider">For a more <span class="primary-color">detailed</span> overview, please feel free <br>  to check
-                        the tools that were based on <br> <span class="border-bottom ">a per-project basis.</span></p>
-                </div>
-                <div class="">
-                    <img src="asset/image/skill.png" alt="">
-                </div>
+            <div class="space-y-5 md:space-y-8">
+                <h4 class="text-2xl font-medium"><Span class="primary-color">Skills</Span> and tools</h4>
+                <p class="text-slate-400 tracking-wider">For a more <span class="primary-color">detailed</span>
+                    overview, please feel free <br> to check
+                    the tools that were based on <br> <span class="border-bottom ">a per-project basis.</span></p>
+            </div>
+            <div class="">
+                <img src="asset/image/skill.png" alt="">
+            </div>
         </section>
 
         <!-- My Project showcase -->
         <section class="grid md:grid-cols-7 gap-5 items-center project-showcase">
-                <div class="col-span-3">
-                    <div class="flex justify-center items-center ">
-                        <div class=" space-y-5 p-5">
-                            <h5 class="text-2xl">Take a took at what I've <br> create and be <br>inspired by </h5>
+            <div class="col-span-3">
+                <div class="flex justify-center items-center ">
+                    <div class=" space-y-5 p-5">
+                        <h5 class="text-2xl">Take a took at what I've <br> create and be <br>inspired by </h5>
                         <button class="border rounded py-2 px-20 font-medium">See more</button>
-                        </div>
                     </div>
                 </div>
-                <div class="col-span-4 grid grid-cols-2 md:grid-cols-3 gap-5 p-2">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                    <img class="img-fluid" src="asset/image/2.png" alt="">
-                </div>
+            </div>
+            <div class="col-span-4 grid grid-cols-2 md:grid-cols-3 gap-5 p-2">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+                <img class="img-fluid" src="asset/image/2.png" alt="">
+            </div>
         </section>
-        
+
         <!-- Contact Section -->
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-content">
-                    <p>Let's get in toutch!</p>
-                    <p>Either by <span class="primary-color">email</span> or through my <br>
+        <section class="grid md:grid-cols-7 py-20 md:py-40">
+            <div class="col-span-3 text-2xl">
+                <div class="flex flex-col md:items-end">
+                    <p class="">Let's get in toutch!</p>
+                    <p class="text-slate-400 md:leading-loose">Either by <span class="primary-color">email</span> or
+                        through my <br>
                         <span class="primary-color">social media.</span>
                     </p>
-                    <div class="circle">
+                    <div class="border rounded-full h-80 w-80 hidden md:block mt-20 border-primaryColor">
                         <div class="half-circle"></div>
                     </div>
                 </div>
-                <div class="contact-link">
-                    <div class="links">
-                        <div class="link">
-                            <a href="https://www.facebook.com/zahidhowlader.info/" target="_blank">
-                                <i class="fa-brands fa-square-facebook"></i>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://www.linkedin.com/in/md-jahid-howlader-57653023b/" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://github.com/jahidhowlader" target="_blank">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
+            </div>
+            <div class="col-span-1 py-3 md:p-5 flex justify-center md:flex-col md:justify-end items-center">
+                <div class="fa-2xl md:py-10 flex md:flex-col gap-10">
+                    <div class="">
+                        <a href="https://www.facebook.com/zahidhowlader.info/" target="_blank">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://www.linkedin.com/in/md-jahid-howlader-57653023b/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://github.com/jahidhowlader" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form action="">
-                        <div class="input">
-                            <div>
-                                <p>Name</p>
-                                <input type="text" required>
-                            </div>
-                            <div>
-                                <p>Email</p>
-                                <input type="email" name="" id="" required>
-                            </div>
+            </div>
+            <div class="col-span-3 hidden">
+                <form action="">
+                    <div class="">
+                        <div>
+                            <p>Name</p>
+                            <input type="text" required>
                         </div>
-                        <p>Message</p>
-                        <textarea name="" id="" cols="51" rows="13" required></textarea>
-                        <br>
-                        <input type="submit" value="Message me!">
-                    </form>
-                </div>
+                        <div>
+                            <p>Email</p>
+                            <input type="email" name="" id="" required>
+                        </div>
+                    </div>
+                    <p>Message</p>
+                    <textarea name="" id="" cols="51" rows="13" required></textarea>
+                    <br>
+                    <input type="submit" value="Message me!">
+                </form>
             </div>
         </section>
 
