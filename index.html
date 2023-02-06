@@ -14,16 +14,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                primaryColor: '#15c196',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#15c196',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
     <!-- DaisyUI CSS -->
 
@@ -36,7 +36,7 @@
     <!-- Header Section -->
     <header class="container mx-auto">
         <!-- navication -->
-        <section class="flex justify-between ">
+        <section class="flex justify-between hidden">
             <div>
                 <h1><span class="primary-color">Vicky</span>Zahid</h1>
             </div>
@@ -102,7 +102,8 @@
         <section class="flex flex-col md:flex-row items-center justify-around p-5">
             <div class="space-y-5">
                 <h1 class="text-3xl md:text-5xl font-medium">Hello, <br> I am <span class="primary-color">Jahid</span>,
-                    <br> Front End Developer </h1>
+                    <br> Front End Developer
+                </h1>
                 <p class="text-slate-400 tracking-wider">Currentlty Located in Bangladesh, I love building <span
                         class="primary-color">Interactive</span>, digital experiences
                     on the
@@ -135,27 +136,107 @@
             </div>
         </section>
 
+        <!-- Discuss Section -->
+        <section class="grid md:grid-cols-2 pb-16 md:pb-40 md:pt-20 md:gap-x-24 ">
+            <div class="pb-10 md:pb-0">
+                <img class="w-full h-auto" src="asset/image/laptop.png" alt="">
+            </div>
+            <div class="flex flex-col space-y-10 md:justify-between">
+                <div class="flex gap-x-5 items-start">
+                    <div class="pt-5">
+                        <i class="fa-solid fa-briefcase fa-2xl primary-color"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl leading-8">Reasonable and <br><span
+                                class="border-b border-primaryColor">flexible prices for clients</span></h4>
+                        <p class="text-slate-400">Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. itaque
+                            animi ullam a soluta minus!</p>
+                    </div>
+                </div>
+                <div class="flex gap-x-5 items-start">
+                    <div class="pt-5">
+                        <i class="fa-brands fa-slideshare fa-2xl primary-color"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl leading8">Elaborating <br><span class="border-b border-primaryColor">ideas in
+                                a discussion</span></h4>
+                        <p class="text-slate-400 ">Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. itaque
+                            animi ullam a soluta minus!</p>
+                    </div>
+                </div>
+                <div class="flex gap-x-5 items-start">
+                    <div class="pt-5">
+                        <i class="fa-solid fa-transgender fa-2xl primary-color"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl leading-8">Full range of <br><span
+                                class="border-b border-primaryColor">design and motion services</span></h4>
+                        <p class="text-slate-400 ">Lorem ipsum dolor sit, amet consectetur <br>adipisicing elit. itaque
+                            animi ullam a soluta minus!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- My Project showcase -->
         <section class="grid md:grid-cols-7 gap-5 items-center project-showcase">
             <div class="col-span-3">
                 <div class="flex justify-center items-center ">
                     <div class=" space-y-5 p-5">
-                        <h5 class="text-2xl">Take a took at what I've <br> create and be <br>inspired by </h5>
+                        <h5 class="text-2xl">The projects I did  <br> while studying <br>inspired by <br> <span class="primary-color"> Programming Hero</span> </h5>
                         <button class="border rounded py-2 px-20 font-medium">See more</button>
                     </div>
                 </div>
             </div>
-            <div class="col-span-4 grid grid-cols-2 md:grid-cols-3 gap-5 p-2">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
-                <img class="img-fluid" src="asset/image/2.png" alt="">
+            <div class="col-span-4 grid md:grid-cols-3 gap-5 md:gap-0 p-2">
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Penguien/?fbclid=IwAR0Nj4AqSTpUOaD0Si_0mIjzjkeH97Hohm-IMbvQ5l5H4VLdozmMcyOdmWE">
+                    <img src="asset/image/1.png" alt="Penguien">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P2-Responsive-Website/?fbclid=IwAR1G3cnTMqr0fWss7MtOFhp2TkESrR31rNSABSlQLPpz776hGgt5A3Ocz1M">
+                    <img src="asset/image/2.png" alt="/Assaignment-P2-Responsive-Website">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P3-LandingWebsite-CSSFramework-BS-/?fbclid=IwAR3drM6dhK-3P6Mv9EZ_iAhAZtpqtNRR2GV-TthEVTbMrdmING43240i0cY">
+                    <img src="asset/image/3.png" alt="Assaignment-P3-LandingWebsite">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Penguien/?fbclid=IwAR0Nj4AqSTpUOaD0Si_0mIjzjkeH97Hohm-IMbvQ5l5H4VLdozmMcyOdmWE">
+                    <img src="asset/image/1.png" alt="Penguien">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P2-Responsive-Website/?fbclid=IwAR1G3cnTMqr0fWss7MtOFhp2TkESrR31rNSABSlQLPpz776hGgt5A3Ocz1M">
+                    <img src="asset/image/2.png" alt="/Assaignment-P2-Responsive-Website">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P3-LandingWebsite-CSSFramework-BS-/?fbclid=IwAR3drM6dhK-3P6Mv9EZ_iAhAZtpqtNRR2GV-TthEVTbMrdmING43240i0cY">
+                    <img src="asset/image/3.png" alt="Assaignment-P3-LandingWebsite">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Penguien/?fbclid=IwAR0Nj4AqSTpUOaD0Si_0mIjzjkeH97Hohm-IMbvQ5l5H4VLdozmMcyOdmWE">
+                    <img src="asset/image/1.png" alt="Penguien">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P2-Responsive-Website/?fbclid=IwAR1G3cnTMqr0fWss7MtOFhp2TkESrR31rNSABSlQLPpz776hGgt5A3Ocz1M">
+                    <img src="asset/image/2.png" alt="/Assaignment-P2-Responsive-Website">
+                </a>
+                <a target="_blank"
+                    href="https://jahidhowlader.github.io/Assaignment-P3-LandingWebsite-CSSFramework-BS-/?fbclid=IwAR3drM6dhK-3P6Mv9EZ_iAhAZtpqtNRR2GV-TthEVTbMrdmING43240i0cY">
+                    <img src="asset/image/3.png" alt="Assaignment-P3-LandingWebsite">
+                </a>
             </div>
+        </section>
+        <section class="flex flex-col md:flex-row justify-around items-center py-20 md:py-56  ">
+            <div class="">
+                <h2 class="text-xl md:text-6xl font-black leading-10 text-center md:text-left pb-5">Let's Talk about
+                    <br> <br class="hidden md:block"> your project
+                </h2>
+            </div>
+            <div class="">
+                <button class="border rounded py-2 md:py-5 px-20 font-medium">Contact Us</button>
+            </div>
+
         </section>
 
         <!-- Contact Section -->
