@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#15c196',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- DaisyUI CSS -->
+
+
+    <!-- External Style -->
+    <link rel="stylesheet" href="asset/style/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="container mx-auto ">
+        <!-- navication -->
+        <section class="flex justify-between items-center my-5 md:mb-12 p-5">
+            <div>
+                <h1 class="text-4xl"><span class="primary-color">Vicky</span>Zahid</h1>
+            </div>
+            <div>
+                <nav>
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="index.html"><span class="primary-color">01. </span> Home</a>
+                            <a href="admin.html"><span class="primary-color">02. </span> About</a>
+                            <a href="global-ranking.html"><span class="primary-color">03. </span>Project</a>
+                            <a href="#"><span class="primary-color">04. </span> Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl border px-2 py-1 rounded"></i></span>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="container mx-auto p-5 ">
+      
+    </main>
+
+    <!-- External javascript file -->
+    <script src="asset/script/app.js"></script>
+</body>
+
+</html>

@@ -17,7 +17,6 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
                         primaryColor: '#15c196',
                     }
                 }
@@ -41,39 +40,24 @@
                 <h1 class="text-4xl"><span class="primary-color">Vicky</span>Zahid</h1>
             </div>
             <div>
-                <nav class="hidden">
-                    <ul class="flex gap-4">
-                        <li><span class="primary-color">01. </span> Home</li>
-                        <li><span class="primary-color">02. </span> About</li>
-                        <li><span class="primary-color">03. </span>Project </li>
-                        <li><span class="primary-color">04. </span> Contact</li>
-                    </ul>
-                </nav>
-
                 <nav>
+                    <div id="myNav" class="overlay">
 
-                    <div>
-                        <div id="myNav" class="overlay">
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                            <!-- Button to close the overlay navigation -->
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                            <!-- Overlay content -->
-                            <div class="overlay-content">
-                                <a href="index.html"><span class="primary-color">01. </span> Home</a>
-                                <a href="admin.html"><span class="primary-color">02. </span> About</a>
-                                <a href="global-ranking.html"><span class="primary-color">03. </span>Project</a>
-                                <a href="#"><span class="primary-color">04. </span> Contact</a>
-                            </div>
-
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="index.html"><span class="primary-color">01. </span> Home</a>
+                            <a href="blog.html"><span class="primary-color">02. </span> About</a>
+                            <a href="global-ranking.html"><span class="primary-color">03. </span>Project</a>
+                            <a href="#"><span class="primary-color">04. </span> Contact</a>
                         </div>
-
-                        <!-- Use any element to open/show the overlay navigation menu -->
-                        <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl border px-2 py-1 rounded"></i></span>
                     </div>
+
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl border px-2 py-1 rounded"></i></span>
                 </nav>
-
-
             </div>
         </section>
 
@@ -90,7 +74,7 @@
                 <button class="border rounded py-5 px-20 font-medium">Let's get in touch!</button>
             </div>
             <div>
-                <!-- <img src="asset/image/4421964-removebg-preview.png" alt=""> -->
+                <img src="asset/image/4421964-removebg-preview.png" alt="">
             </div>
         </section>
     </header>
