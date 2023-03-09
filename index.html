@@ -34,14 +34,14 @@
 
 <body>
     <!-- Header Section -->
-    <header class="container mx-auto">
+    <header class="container mx-auto ">
         <!-- navication -->
-        <section class="flex justify-between hidden">
+        <section class="flex justify-between items-center my-5 md:mb-12 p-5">
             <div>
-                <h1><span class="primary-color">Vicky</span>Zahid</h1>
+                <h1 class="text-4xl"><span class="primary-color">Vicky</span>Zahid</h1>
             </div>
             <div>
-                <nav>
+                <nav class="hidden">
                     <ul class="flex gap-4">
                         <li><span class="primary-color">01. </span> Home</li>
                         <li><span class="primary-color">02. </span> About</li>
@@ -50,50 +50,29 @@
                     </ul>
                 </nav>
 
+                <nav>
 
-                <nav class="hidden">
-                    <div class="container flex flex-wrap items-center justify-between mx-auto">
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span
-                                class="primary-color">Vicky</span>Zahid</span>
-                        <button data-collapse-toggle="navbar-default" type="button"
-                            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                            aria-controls="navbar-default" aria-expanded="false">
-                            <span class="sr-only">Open main menu</span>
-                            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                            <ul
-                                class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                                        aria-current="page">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                                </li>
-                            </ul>
+                    <div>
+                        <div id="myNav" class="overlay">
+
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                                <a href="index.html"><span class="primary-color">01. </span> Home</a>
+                                <a href="admin.html"><span class="primary-color">02. </span> About</a>
+                                <a href="global-ranking.html"><span class="primary-color">03. </span>Project</a>
+                                <a href="#"><span class="primary-color">04. </span> Contact</a>
+                            </div>
+
                         </div>
+
+                        <!-- Use any element to open/show the overlay navigation menu -->
+                        <span onclick="openNav()"><i class="fa-solid fa-bars text-3xl border px-2 py-1 rounded"></i></span>
                     </div>
                 </nav>
+
 
             </div>
         </section>
@@ -183,7 +162,9 @@
             <div class="col-span-3">
                 <div class="flex justify-center items-center ">
                     <div class=" space-y-5 p-5">
-                        <h5 class="text-2xl">The projects I did  <br> while studying <br>inspired by <br> <span class="primary-color"><a target="_blank" href="https://www.programming-hero.com/"> Programming Hero</a></span> </h5>
+                        <h5 class="text-2xl">The projects I did <br> while studying <br>inspired by <br> <span
+                                class="primary-color"><a target="_blank" href="https://www.programming-hero.com/">
+                                    Programming Hero</a></span> </h5>
                         <button class="border rounded py-2 px-20 font-medium">See more</button>
                     </div>
                 </div>
@@ -201,16 +182,13 @@
                     href="https://jahidhowlader.github.io/Assaignment-P3-LandingWebsite-CSSFramework-BS-/?fbclid=IwAR3drM6dhK-3P6Mv9EZ_iAhAZtpqtNRR2GV-TthEVTbMrdmING43240i0cY">
                     <img class="w-full h-auto" src="asset/image/3.png" alt="Assaignment-P3-LandingWebsite">
                 </a>
-                <a target="_blank"
-                    href="https://jahidhowlader.github.io/pin-match/">
+                <a target="_blank" href="https://jahidhowlader.github.io/pin-match/">
                     <img class="w-full h-auto" src="asset/image/44.png" alt="Penguien">
                 </a>
-                <a target="_blank"
-                    href="https://jahidhowlader.github.io/simple-bank-calculation/">
+                <a target="_blank" href="https://jahidhowlader.github.io/simple-bank-calculation/">
                     <img class="w-full h-auto" src="asset/image/55.png" alt="/Assaignment-P2-Responsive-Website">
                 </a>
-                <a target="_blank"
-                    href="https://jahidhowlader.github.io/money-master/">
+                <a target="_blank" href="https://jahidhowlader.github.io/money-master/">
                     <img class="w-full h-auto" src="asset/image/6.png" alt="Assaignment-P3-LandingWebsite">
                 </a>
                 <a target="_blank"
@@ -295,6 +273,9 @@
         <!-- Bootstrap Js -->
         <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     </main>
+
+    <!-- External javascript file -->
+    <script src="asset/script/app.js"></script>
 </body>
 
 </html>
